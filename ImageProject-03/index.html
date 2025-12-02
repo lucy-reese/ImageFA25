@@ -4,9 +4,13 @@
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
   </head>
   <body>
+  <a-assets>
+    <a-asset-item id="frogModel" src="models/Model.obj"></a-asset-item>
+  </a-assets>
     <a-scene>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
       <a-sky color="pink"></a-sky>
+      <a-obj-model src="#frogModel" scale="0.01 0.01 0.01" position="0 0 0" color="green"></a-obj-model>
     </a-scene>
   </body>
 </html>
